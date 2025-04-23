@@ -1,0 +1,44 @@
+3D Printer 
+3D printer G-code is a language that tells the printer what movements and actions to perform. It consists of G-code (for movement) and M-code (for miscellaneous actions).
+
+1. Movement Commands:
+
+G0 (Rapid Travel): Moves the printhead to a specified position without printing (fast movement). 
+G1 (Coordinated Movement): Moves the printhead along a specified path, potentially with extrusion (printing movement). 
+G2 & G3 (Arc Movement): Moves the printhead along a circular arc (G2 clockwise, G3 counter-clockwise). 
+G28 (Home): Moves the printhead to its origin or "home" position. 
+G90 (Absolute Positioning): Positions the printhead relative to the printer's origin (0,0,0). 
+G91 (Relative Positioning): Positions the printhead relative to its current position. 
+G92 (Set Current Position): Sets the printer's current position as a new origin. 
+
+2. Temperature Commands:
+
+M104 (Set Nozzle Temperature): Sets the target temperature of the extruder nozzle.
+M109 (Set Nozzle Temperature and Wait): Sets the target nozzle temperature and waits until it's reached.
+M140 (Set Bed Temperature): Sets the target temperature of the heated bed.
+M190 (Set Bed Temperature and Wait): Sets the target bed temperature and waits until it's reached. 
+
+3. Miscellaneous Commands:
+
+M106 (Fan On): Turns on the fan (usually for cooling the print).
+M107 (Fan Off): Turns off the fan.
+M84 (Disable Steppers): Disables the stepper motors to prevent unwanted movement.
+M0 (Pause): Pauses the print.
+M30 (Stop Print): Stops the current print job. 
+
+
+Programming the 3D Printer :
+
+When you read about 3D printing, you can come across G-CodeL a programming language that transforms 3D models into instructions which a 3D printer can understand. The language can be mastered in order to modify parameters of the printout by operating on the code. In their M200 and M300 3D printers Zortrax have decided not to implement this solution and to give their users a much simpler tool, which doesn’t require knowledge and skills in programming. Once you buy a Zortrax printer, you’ll be able to download the free Z-SUITE software from their website after providing the 3D printer’s serial number.
+
+Z-SUITE gives you an intuitive means of preparing your files for 3D printing and deciding on specific parameters, such as ventilator speed, print precision, layer thickness and type of infill. Everything is done as if it were a simple computer program. If you’re able to deal with online banking and social media, you’ll also manage to prepare a 3D model for printing on a Zortrax 3D printer.
+
+G-code:
+G-code is a numerical control language, and it's the "language" that the 3D printer understands.
+G-code commands instruct the printer on where to move, how fast to move, and when to extrude material.
+Some common G-code commands include G0 and G1 (linear movement), G2 and G3 (arc movement), and G28 (moving to the home position), according to Wevolver.
+Simplify3D Software provides a beginner's guide to understanding G-code commands. 
+Slicer Software:
+Slicer software is used to prepare 3D models for printing, including slicing and generating G-code. 
+Common slicer software options include Cura, Slic3r. 
+Zortrax's Z-SUITE software provides a user-friendly interface for preparing files for printing, according to Zortrax. 
